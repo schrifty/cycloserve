@@ -9,7 +9,7 @@ set :user, "ubuntu"
 set :branch, "master"
 set :use_sudo, false
 #set :deploy_via, :remote_cache
-before "deploy:assets:precompile", "bundle:install"
+#before "deploy:assets:precompile", "bundle:install"
 
 ssh_options[:forward_agent] = true
 ssh_options[:keys] = "~/.ssh/myhosts.pem"
