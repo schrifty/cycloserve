@@ -18,8 +18,7 @@
             document.getElementsByTagName('HEAD').item(0).appendChild(script);
             script.onreadystatechange = script.onload = function (e) {
                 if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
-                    alert("it's loaded!");
-                    console.log("it's loaded in console!");
+                    ReplyStyle.init();
                 }
             };
         })();</script>
